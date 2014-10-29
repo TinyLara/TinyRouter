@@ -5,7 +5,12 @@
   "require": {
     "php": ">=5.3.3"
   },
-
+  "authors": [
+      {
+          "name": "John Lui",
+          "email": "wenhanlv@gmail.com"
+      }
+  ],
   "autoload": {
     "psr-4": {"TinyLara\\TinyRoute\\": ""}
   }
