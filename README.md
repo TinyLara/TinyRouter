@@ -12,7 +12,6 @@ If you have Composer, just include TinyRoute as a project dependency in your `co
 require: {
     "tinylara/tinyroute": "dev-master"
 }
-
 ```
 
 ### Examples
