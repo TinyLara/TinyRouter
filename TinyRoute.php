@@ -35,6 +35,20 @@ class TinyRoute {
     $uri = dirname($_SERVER['PHP_SELF']).$params[0];
     $callback = $params[1];
 
+    if ( $method == 'any' ) {
+      self::pushToArray($uri, 'get', $callback);
+      self::pushToArray($uri, 'post', $callback);
+    } else {
+      self::pushToArray($uri, $method, $callback);
+    }
+  }
+
+  /**
+   * Push route items to class arrays
+   *
+   */
+  public static function pushToArray($uri, $method, $callback)
+  {
     array_push(self::$routes, $uri);
     array_push(self::$methods, strtoupper($method));
     array_push(self::$callbacks, $callback);
