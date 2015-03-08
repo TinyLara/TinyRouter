@@ -21,8 +21,17 @@ use TinyLara\TinyRoute\TinyRoute as Route;
 
 Route::get('', 'HomeController@home');
 
+// GET
 Route::get('foo', function() {
-  echo "Foo!";
+  echo "GET Foo!";
+});
+// post
+Route::post('foo', function() {
+  echo "POST Foo!";
+});
+// ANY: GET or POST
+Route::any('foo', function() {
+  echo "ANY Foo!";
 });
 
 Route::error(function() {
