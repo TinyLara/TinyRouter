@@ -25,7 +25,7 @@ Route::get('', 'HomeController@home');
 Route::get('foo', function() {
   echo "GET Foo!";
 });
-// post
+// POST
 Route::post('foo', function() {
   echo "POST Foo!";
 });
