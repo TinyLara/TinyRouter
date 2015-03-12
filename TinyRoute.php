@@ -31,8 +31,7 @@ class TinyRoute {
    */
   public static function __callstatic($method, $params)
   {
-
-    $uri = dirname($_SERVER['PHP_SELF']).$params[0];
+    $uri = $params[0];
     $callback = $params[1];
 
     if ( $method == 'any' ) {
@@ -71,7 +70,7 @@ class TinyRoute {
    */
   public static function dispatch($after=null)
   {
-    $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $uri = self::detect_uri();
     $method = $_SERVER['REQUEST_METHOD'];
 
     $searches = array_keys(static::$patterns);
@@ -163,7 +162,6 @@ class TinyRoute {
       }
     }
 
-
     // run the error callback if the route was not found
     if ($found_route == false) {
       if (!self::$error_callback) {
@@ -174,5 +172,21 @@ class TinyRoute {
       }
       call_user_func(self::$error_callback);
     }
+  }
+
+  // detect true URI, inspired by CodeIgniter 2
+  private static function detect_uri()
+  {
+    $uri = $_SERVER['REQUEST_URI'];
+    if (strpos($uri, $_SERVER['SCRIPT_NAME']) === 0) {
+      $uri = substr($uri, strlen($_SERVER['SCRIPT_NAME']));
+    } elseif (strpos($uri, dirname($_SERVER['SCRIPT_NAME'])) === 0) {
+      $uri = substr($uri, strlen(dirname($_SERVER['SCRIPT_NAME'])));
+    }
+    if ($uri == '/' || empty($uri)) {
+      return '/';
+    }
+    $uri = parse_url($uri, PHP_URL_PATH);
+    return str_replace(array('//', '../'), '/', trim($uri, '/'));
   }
 }

@@ -19,7 +19,7 @@ require: {
 ```php
 use TinyLara\TinyRoute\TinyRoute as Route;
 
-Route::get('', 'HomeController@home');
+Route::get('/', 'HomeController@home');
 
 // GET
 Route::get('foo', function() {
