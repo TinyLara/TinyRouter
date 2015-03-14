@@ -2,7 +2,7 @@ TinyLara\TinyRoute
 =====
 [![Latest Stable Version](https://poser.pugx.org/tinylara/tinyroute/v/stable.svg)](https://packagist.org/packages/tinylara/tinyroute) [![Total Downloads](https://poser.pugx.org/tinylara/tinyroute/downloads.svg)](https://packagist.org/packages/tinylara/tinyroute) [![License](https://poser.pugx.org/tinylara/tinyroute/license.svg)](https://packagist.org/packages/tinylara/tinyroute)
 
-TinyRoute is a tiny PHP router based on [Macaw](https://github.com/NoahBuscher/Macaw).
+TinyRoute is a tiny PHP router based on [Macaw](https://github.com/NoahBuscher/Macaw). [Read the documentation.](https://github.com/TinyLara/TinyLara/wiki/Routing)
 
 ### Install
 
