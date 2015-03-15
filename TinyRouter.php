@@ -3,12 +3,12 @@
 namespace TinyLara\TinyRouter;
 
 /**
- * @method static TinyRoute get(string $route, Callable $callback)
- * @method static TinyRoute post(string $route, Callable $callback)
- * @method static TinyRoute put(string $route, Callable $callback)
- * @method static TinyRoute delete(string $route, Callable $callback)
- * @method static TinyRoute options(string $route, Callable $callback)
- * @method static TinyRoute head(string $route, Callable $callback)
+ * @method static TinyRouter get(string $route, Callable $callback)
+ * @method static TinyRouter post(string $route, Callable $callback)
+ * @method static TinyRouter put(string $route, Callable $callback)
+ * @method static TinyRouter delete(string $route, Callable $callback)
+ * @method static TinyRouter options(string $route, Callable $callback)
+ * @method static TinyRouter head(string $route, Callable $callback)
  */
 class TinyRouter {
 
