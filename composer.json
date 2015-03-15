@@ -3,7 +3,7 @@
   "description": "Tiny PHP router based on Macaw.",
   "license": "MIT",
   "require": {
-    "php": ">=5.3.3"
+    "php": ">=5.4.0"
   },
   "authors": [
       {
