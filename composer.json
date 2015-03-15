@@ -1,5 +1,5 @@
 {
-  "name": "tinylara/tinyroute",
+  "name": "tinylara/tinyrouter",
   "description": "Tiny PHP router based on Macaw.",
   "license": "MIT",
   "require": {
@@ -12,6 +12,6 @@
       }
   ],
   "autoload": {
-    "psr-4": {"TinyLara\\TinyRoute\\": ""}
+    "psr-4": {"TinyLara\\TinyRouter\\": ""}
   }
 }

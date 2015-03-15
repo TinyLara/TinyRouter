@@ -1,6 +1,6 @@
 <?php
 
-namespace TinyLara\TinyRoute;
+namespace TinyLara\TinyRouter;
 
 /**
  * @method static TinyRoute get(string $route, Callable $callback)
@@ -10,7 +10,7 @@ namespace TinyLara\TinyRoute;
  * @method static TinyRoute options(string $route, Callable $callback)
  * @method static TinyRoute head(string $route, Callable $callback)
  */
-class TinyRoute {
+class TinyRouter {
 
   public static $routes = array();
 

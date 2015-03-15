@@ -1,23 +1,23 @@
-TinyLara\TinyRoute
+TinyLara\TinyRouter
 =====
-[![Latest Stable Version](https://poser.pugx.org/tinylara/tinyroute/v/stable.svg)](https://packagist.org/packages/tinylara/tinyroute) [![Total Downloads](https://poser.pugx.org/tinylara/tinyroute/downloads.svg)](https://packagist.org/packages/tinylara/tinyroute) [![License](https://poser.pugx.org/tinylara/tinyroute/license.svg)](https://packagist.org/packages/tinylara/tinyroute)
+[![Latest Stable Version](https://poser.pugx.org/tinylara/tinyrouter/v/stable.svg)](https://packagist.org/packages/tinylara/tinyrouter) [![Total Downloads](https://poser.pugx.org/tinylara/tinyrouter/downloads.svg)](https://packagist.org/packages/tinylara/tinyrouter) [![License](https://poser.pugx.org/tinylara/tinyrouter/license.svg)](https://packagist.org/packages/tinylara/tinyrouter)
 
-TinyRoute is a tiny PHP router based on [Macaw](https://github.com/NoahBuscher/Macaw).
+TinyRouter is a tiny PHP router based on [Macaw](https://github.com/NoahBuscher/Macaw).
 
 ### Install
 
-If you have Composer, just include TinyRoute as a project dependency in your `composer.json`. If you don't just install it by downloading the .ZIP file and extracting it to your project directory.
+If you have Composer, just include TinyRouter as a project dependency in your `composer.json`. If you don't just install it by downloading the .ZIP file and extracting it to your project directory.
 
 ```
 require: {
-    "tinylara/tinyroute": "*"
+    "tinylara/tinyrouter": "*"
 }
 ```
 
 ### Examples
 
 ```php
-use TinyLara\TinyRoute\TinyRoute as Route;
+use TinyLara\TinyRouter\TinyRouter as Route;
 
 Route::get('/', 'HomeController@home');
 
@@ -51,4 +51,4 @@ If you don't specify an error callback, it will just echo `404`.
 
 ### License
 
-The TinyRoute is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The TinyRouter is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
