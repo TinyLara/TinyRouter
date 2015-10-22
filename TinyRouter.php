@@ -27,6 +27,15 @@ class TinyRouter {
   public static $error_callback;
 
   /**
+   * add filter for your routes
+   */
+  public static function filter($filter, $result) {
+    if ($filter()) {
+      $result();
+    }
+  }
+
+  /**
    * Defines a route w/ callback and method
    */
   public static function __callstatic($method, $params)
